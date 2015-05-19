@@ -13,6 +13,7 @@ PKG_DEPENDENCIES=(
     'gfortran'
     'libopenblas-dev'
     'liblapack-dev'
+    'x11-apps'
 )
 
 # Enable multiverse.
