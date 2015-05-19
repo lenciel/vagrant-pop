@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PPA_REPOSITORIES=(
-    'ppa:jon-severinsson/ffmpeg'
+    'ppa:samrog131/ppa'
 )
 
 PKG_DEPENDENCIES=(
@@ -30,6 +30,9 @@ do
 done
 
 apt-get update
+apt-get install -y ffmpeg
+sudo apt-add-repository --remove ppa:samrog131/ppa
+sudo apt-get update
 apt-get install -y ${PKG_DEPENDENCIES[@]}
 
 # Fix for matplotlib bug #3029.

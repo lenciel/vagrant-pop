@@ -1,3 +1,5 @@
 numpy==1.8.1
 scipy==0.14.0
 mahotas==1.1.0
+imutils==0.2.1
+matplotlib==1.4.3
